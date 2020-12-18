@@ -1,6 +1,6 @@
 import os
 
-os.chdir('../github/advent')
+os.chdir('../github/advent/2020')
 
 nums = [1721,979,366,299,675,1456]
 
@@ -30,7 +30,7 @@ def advent1b(nums):
 
 
 
-with open('2020/day1.txt') as f:
+with open('data/day1.txt') as f:
     new_lines = [int(x.replace('\n', '')) for x in f.readlines()]
     print(advent1a(new_lines))
     print(advent1b(new_lines))

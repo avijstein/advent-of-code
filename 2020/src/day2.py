@@ -1,6 +1,6 @@
 import os, re
 
-os.chdir('../github/advent')
+os.chdir('../github/advent/2020')
 
 rules = ['1-3 a', '1-3 b', '2-9 c']
 passwords = ['abcde', 'cdefg', 'ccccccccc']
@@ -41,7 +41,7 @@ def letter_index(rules, passwords):
 # print(letter_index(rules, passwords))
 
 
-with open('2020/day2.txt') as f:
+with open('data/day2.txt') as f:
     lines = [x.replace('\n', '') for x in f.readlines()]
     rules,passwords = [],[]
     for line in lines:
@@ -49,11 +49,8 @@ with open('2020/day2.txt') as f:
         rules.append(a)
         passwords.append(b)
 
-    # print(rules)
-    # print(passwords)
-
-    # print(letter_count(rules, passwords))
-    # print(letter_index(rules, passwords))
+    print(letter_count(rules, passwords))
+    print(letter_index(rules, passwords))
 
 
 
